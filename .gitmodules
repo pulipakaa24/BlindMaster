@@ -1,0 +1,9 @@
+[submodule "blinds_flutter"]
+	path = blinds_flutter
+	url = https://github.com/pulipakaa24/blinds_flutter.git
+[submodule "blinds_express"]
+	path = blinds_express
+	url = https://github.com/pulipakaa24/blinds_express.git
+[submodule "Blinds_XIAO"]
+	path = Blinds_XIAO
+	url = https://github.com/pulipakaa24/Blinds_XIAO.git
