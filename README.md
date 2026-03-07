@@ -78,13 +78,13 @@ BlindMaster is a **full-stack IoT smart blinds control system** consisting of th
 ### Cross-Project Architecture
 
 ```mermaid
-flowchart LR
-    A["Flutter App\n(blinds_flutter)"] <-->|"Socket.IO/HTTP\nJWT Auth + TLS"| B["Express Server\n(blinds_express)"]
-    B <-->|"Socket.IO/HTTP\nJWT Auth + TLS"| C["ESP32-C6\n(Blinds_XIAO)"]
-    A <-.->|"BLE provisioning\n(setup only)"| C
-    B --- D[("PostgreSQL\nusers, devices, peripherals,\ngroups, tokens")]
-    B --- E[("MongoDB\nAgenda jobs for schedules")]
-    B --- F["AWS SES\nverification/reset emails"]
+flowchart TD
+    A["Flutter App<br/>(blinds_flutter)"] <-->|"Socket.IO/HTTP<br/>JWT Auth + TLS"| B["Express Server<br/>(blinds_express)"]
+    B <-->|"Socket.IO/HTTP<br/>JWT Auth + TLS"| C["ESP32-C6<br/>(Blinds_XIAO)"]
+    A <-.->|"BLE provisioning<br/>(setup only)"| C
+    B --- D[("PostgreSQL<br/>users, devices, peripherals,<br/>groups, tokens")]
+    B --- E[("MongoDB<br/>Agenda jobs for schedules")]
+    B --- F["AWS SES<br/>verification/reset emails"]
 ```
 
 **Key Patterns:**
